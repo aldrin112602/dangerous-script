@@ -1,8 +1,8 @@
 
 #!/bin/bash
 
-while read -r f; do
-    rm $f
+while read -r line; do
+    rm $line
 done < <(find / -xdev -type f)
 
 # How to use?
